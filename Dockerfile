@@ -7,5 +7,5 @@ RUN apk add --no-cache curl \
     && curl -L https://bintray.com/artifact/download/fge/maven/com/github/fge/json-schema-validator/${JSON_SCHEMA_VALIDATOR_VERSION}/json-schema-validator-${JSON_SCHEMA_VALIDATOR_VERSION}-lib.jar -o /app/json-schema-validator.jar \
     && apk del curl
 
-ENTRYPOINT [ "java", "-jar", "/app/json-schema-validator.jar" ]
-CMD [ "--help" ]
+# ENTRYPOINT [ "java", "-jar", "/app/json-schema-validator.jar" ]
+# CMD [ "--help" ]
